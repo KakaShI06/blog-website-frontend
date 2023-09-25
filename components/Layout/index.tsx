@@ -10,7 +10,7 @@ function Layout({ children }: Props) {
   return (
     <main className='dark:bg-[#121212] dark:text-white'>
       <Header />
-      <main className='container p-4'>{children}</main>
+      <main className='container p-4 pt-24'>{children}</main>
       <Footer />
     </main>
   )

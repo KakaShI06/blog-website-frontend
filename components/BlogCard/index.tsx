@@ -11,7 +11,7 @@ type Props = {
 
 function BlogCard({ name, description, link, imageUrl, topics }: Props) {
   return (
-    <div className='flex flex-col md:flex-row lg:flex-row gap-4 mt-4 border border-blue-100 p-4 rounded-xl'>
+    <div className='flex flex-col md:flex-row lg:flex-row gap-4 mt-4 border border-[#2b3a42] p-4 rounded-xl'>
       {imageUrl && (
         <div className='lg:min-w-[300px] md:min-w-[300px]'>
           <Image

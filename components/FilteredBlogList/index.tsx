@@ -22,7 +22,7 @@ function FilteredBlogList({ blogs }: Props) {
       <div>
         <h4>Search :</h4>
         <input
-          className='dark:bg-gray-500 dark:text-white p-2 outline-none border border-black dark:border-white rounded-sm w-full my-2'
+          className='dark:bg-[#101619] dark:text-white p-2 outline-none border border-black dark:border-white rounded-sm w-full my-2'
           value={value}
           onChange={(e) => setValue(e.target.value)}
           placeholder='Search for blog'

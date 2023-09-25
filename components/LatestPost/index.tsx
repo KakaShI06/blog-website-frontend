@@ -13,7 +13,7 @@ function LatestPost({ blog }: Props) {
       <h1 className='font-bold text-2xl underline pt-2 pb-4'>
         Checkout My Latest Blog Here:
       </h1>
-      <div className='flex flex-col md:flex-row lg:flex-row gap-4 mt-4 border border-blue-100 p-4 rounded-xl'>
+      <div className='flex flex-col md:flex-row lg:flex-row gap-4 mt-4 border border-[#2b3a42] p-4 rounded-xl'>
         {blog.imageUrl && (
           <div>
             <Image

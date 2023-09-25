@@ -47,7 +47,7 @@
 
 
 .dark .markdown code {
-  background-color: #373636;
+  background-color: rgb(16 22 25);
   padding: 2px;
   border-radius: 3px;
 }
@@ -60,7 +60,7 @@
 }
 
 .dark .markdown pre {
-  background-color: #373636;
+  background-color: rgb(16 22 25);
   padding: 7px;
   margin: 10px 0;
   border-radius: 7px;

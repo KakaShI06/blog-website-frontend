@@ -5,9 +5,9 @@ type Props = {}
 
 function WelcomeScreen({}: Props) {
   return (
-    <div className='lg:min-h-[50vh] flex justify-between items-center flex-col md:flex-row lg:flex-row'>
-      <div>
-        <span className='text-3xl'>
+    <div className='lg:min-h-[50vh] flex justify-between items-center flex-col-reverse md:flex-row lg:flex-row'>
+      <div className='sm:mt-4'>
+        <span className='text-3xl font-semibold'>
           Hi,
           <br /> {"I'm"} Ujjval Priyadarshi,
         </span>{' '}

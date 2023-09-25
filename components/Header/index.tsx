@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { lightModeIcon, darkModeIcon } from '@/utility/iconsConstant'
 import Link from 'next/link'
+import Image from 'next/image'
 
 type Props = {}
 
@@ -18,13 +19,19 @@ function Header({}: Props) {
   }, [theme])
 
   return (
-    <header className='w-full border-b border-black dark:border-white'>
-      <section className='container flex justify-between p-4'>
-        <div>
+    <header className='fixed w-full text-white dark:border-b dark:border-white bg-[#2b3a42] dark:bg-[#101619]'>
+      <section className='container flex justify-between p-3'>
+        <div className='flex items-center gap-3 cursor-pointer'>
+          <Image 
+            src={'/logo/white.png'}
+            alt='logo'
+            width={40}
+            height={40}
+          />
           <Link href={'/'}>Blog</Link>
         </div>
         <div
-          className='pointer'
+          className='cursor-pointer p-2'
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
         >
           {theme === 'dark' ? <>{darkModeIcon}</> : <>{lightModeIcon}</>}
