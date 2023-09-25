@@ -28,5 +28,9 @@ body {
 @layer components {
   .container {
     @apply p-2 max-w-[1200px] mx-auto;
+    
   }
+  .topics{
+    @apply bg-blue-400 px-2 py-1 rounded-sm;
+  } 
 }

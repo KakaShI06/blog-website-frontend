@@ -8,9 +8,9 @@ type Props = {
 
 function Layout({ children }: Props) {
   return (
-    <main className='w-screen'>
+    <main className='dark:bg-black dark:text-white'>
       <Header />
-      <main className='container'>{children}</main>
+      <main className='container p-4'>{children}</main>
       <Footer />
     </main>
   )
