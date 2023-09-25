@@ -25,7 +25,7 @@ function BlogCard({ name, description, link, imageUrl, topics }: Props) {
       )}
       <div>
         <h3 className='font-bold text-xl hover:underline hover:cursor-pointer'>
-          {name}
+          <Link href={link}>{name}</Link>
         </h3>
         <div className='flex gap-2 pt-1 pb-1 flex-wrap'>
           {topics?.map((topic, index) => (

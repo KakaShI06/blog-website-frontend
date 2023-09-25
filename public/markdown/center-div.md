@@ -10,12 +10,11 @@ Let's firstly look html structure:
     //content
   </div>
 </div>
-
 ```
 
 `Note: Each child div should contain some width and height`
 
-1. **Using FlexBox:**
+1. ## Using FlexBox:
 
    I think it's one of the easiest and most used method to center a div, we simply provide display flex property , justify center for horizontally center and align-item center for vertically center. And you div will be centered
 
@@ -27,7 +26,7 @@ Let's firstly look html structure:
    }
    ```
 
-2. **Using Grid:**
+2. ## Using Grid:
 
    It's also a perfect method to center a code with minimal lines of code.
 
@@ -36,10 +35,9 @@ Let's firstly look html structure:
      display: grid;
      place-items: center;
    }
-
    ```
 
-3. **Positioning**
+3. ## Positioning
 
     In this method we provide position relative to parent div and for child div position absolute with respect it's parent. Then add transform property accordingly.
 
@@ -53,10 +51,11 @@ Let's firstly look html structure:
       left: 50%;
       transform: translate(-50%, -50%);
     }
-
     ```
 
-4. **By Using margin auto**
+4. ## By Using margin auto
+
+
     If child div and some particular width and height then providing margin auto will automatically set child `<div/>` in center. 
 
     ```
@@ -77,7 +76,9 @@ Let's firstly look html structure:
     }
     ```
 
-5. **Text align (For inline elements only)**
+5. ## Text align (For inline elements only)
+
+
     This can only be used in for inline-elements.
 
     ```

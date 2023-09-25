@@ -21,9 +21,6 @@
   padding: 0;
 }
 
-body {
-
-}
 
 @layer components {
   .container {
@@ -33,4 +30,46 @@ body {
   .topics{
     @apply bg-blue-400 px-2 py-1 rounded-sm;
   } 
+}
+
+.markdown > h1 {
+  font-size: 24px;
+  font-weight: 800;
+  text-decoration: underline;
+  margin: 1em 0;
+}
+
+.markdown code {
+  background-color: lightgray;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+
+.dark .markdown code {
+  background-color: #373636;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.markdown pre {
+  background-color: lightgray;
+  padding: 7px;
+  margin: 10px 0;
+  border-radius: 7px;
+}
+
+.dark .markdown pre {
+  background-color: #373636;
+  padding: 7px;
+  margin: 10px 0;
+  border-radius: 7px;
+  overflow-y: auto;
+}
+
+.markdown h2 {
+  margin: 1em 0;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: underline;
 }

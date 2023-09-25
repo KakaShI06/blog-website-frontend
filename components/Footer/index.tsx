@@ -8,7 +8,7 @@ function Footer({}: Props) {
   const year = new Date().getFullYear()
 
   return (
-    <div className='w-full p-4 pt-0 bg-black'>
+    <div className='w-full p-4 pt-0 bg-gray-400 dark:bg-black'>
       <div className='flex justify-between'>
         <div className='flex items-center gap-4'>
           <div>

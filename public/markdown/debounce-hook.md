@@ -2,22 +2,22 @@
 
 I love making custom hook, it's make my life so easy and very easy to implement. In this blog I will tell how easily you can implement debounce to any input element using a custom hook. So let's get started.
 
-### What is custom hook?
+## What is custom hook?
 
 It's nothing but a reusable functions.
 When you have component logic that needs to be used by multiple components, we can extract that logic to a custom Hook.
 
-### What is Debounce?
+## What is Debounce?
 
 Debouncing is a programming practice used to ensure that time-consuming tasks do not fire so often, that it stalls the performance of the web page. In other words, it limits the rate at which a function gets invoked. 
 
-<b>For eg:</b>&nbsp; We have search and type `<input />` element and on every `onChange` event we want to call a external api. Hence, it is a bad practice to call a api in every typed word in the input field, this will increase the load on backend and we want to optimise our load as much as possible.
+**For eg:** We have search and type `<input />` element and on every `onChange` event we want to call a external api. Hence, it is a bad practice to call a api in every typed word in the input field, this will increase the load on backend and we want to optimise our load as much as possible.
 
-Hence, <strong>Debounce</strong> comes in the picture. So the basic idea is to cancel every previous requests until the user stops typing and show the result of the latest api call.
+Hence, **Debounce** comes in the picture. So the basic idea is to cancel every previous requests until the user stops typing and show the result of the latest api call.
 
 Now let's get to the implementation part.
 
-##Code
+## Code
 
 Firstly let's make a normal input field where we want to implement debounce.
 
@@ -42,7 +42,7 @@ export default DebounceInput
 
 Here on every change in value form the state, we want to call external api.
 
-Now Let's make a new file named `useDebounce.js` where we will be writing debounce logic.
+Now, Let's make a new file named `useDebounce.js` where we will be writing debounce logic.
 
 ```
 import { useEffect, useState } from 'react'
@@ -64,7 +64,7 @@ const useDebounce = (value, delay = 500) => {
 export default useDebounce
 ```
 
-Now let me explain this code line by line (Bhai hai abhi :smile:) 
+Now let me explain this code line by line (Bhai hai abhi) 
 
 We will be that passing that state value into this functional hook, and we will be passing that into the dependancy of useEffect hook, every that value changes useEffect will trigger. 
 Now, if you can see in return statement of useEffect we are clearing the setTime interval. 

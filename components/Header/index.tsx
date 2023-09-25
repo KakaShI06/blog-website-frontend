@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { lightModeIcon, darkModeIcon } from '@/utility/iconsConstant'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -19,7 +20,9 @@ function Header({}: Props) {
   return (
     <header className='w-full border-b border-black dark:border-white'>
       <section className='container flex justify-between p-4'>
-        <div>Blog</div>
+        <div>
+          <Link href={'/'}>Blog</Link>
+        </div>
         <div
           className='pointer'
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}

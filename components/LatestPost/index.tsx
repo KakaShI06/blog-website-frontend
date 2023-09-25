@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import blogType from '@/interface/blogType'
+import Link from 'next/link'
 
 type Props = {
   blog: blogType
@@ -26,14 +27,14 @@ function LatestPost({ blog }: Props) {
         )}
         <div>
           <h2 className='font-bold text-xl hover:underline hover:cursor-pointer'>
-            {blog.name}
+            <Link href={blog.url}>{blog.name}</Link>
           </h2>
           <div className='flex gap-2 pt-1 pb-1 flex-wrap'>
             {blog.topic.map((topic, index) => (
               <div key={index} className='topics'> {topic} </div>
             ))}
           </div>
-          <div>{blog.description} <br/> <span className='underline cursor-pointer'>Read More</span> </div>
+          <div>{blog.description} <br/> <Link href={blog.url}><span className='underline cursor-pointer'>Read More</span> </Link></div>
         </div>
       </div>
     </section>
