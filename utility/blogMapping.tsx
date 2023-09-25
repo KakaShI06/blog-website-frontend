@@ -13,7 +13,7 @@ const blogs = [
       "I love making custom hook, it's make my life so much easy and very easy to implement. In this blog I will tell how easily you can implement debounce to any input element using a custom hook",
     url: '/blog/debounce-hook',
     topic: ['React', 'React Hook', 'Technical Knowledge'],
-    imageUrl: '/blogs/1.jpg',
+    imageUrl: '/blogs/react-hooks.jpg',
   },
 ]
 
