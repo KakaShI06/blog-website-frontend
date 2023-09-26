@@ -7,6 +7,25 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Blog | Ujjval',
   description: 'Personalised Blog Website',
+  icons: '/logo/white.png',
+  openGraph: {
+    type: 'website',
+    siteName: 'Blog',
+    title: 'Blog',
+    url: 'https://res.cloudinary.com/doql129vl/image/upload/v1695316482/group_hi47ny.png',
+    description: 'Personalised Blog Website created by Developer Ujjval Priyadarshi',
+  },
+  alternates: {
+    canonical: 'https://blogs.snapbit.in'
+  },
+  twitter: {
+    creator: '@UjjvalP06',
+    images: 'https://res.cloudinary.com/doql129vl/image/upload/v1695316482/group_hi47ny.png',
+    site: '@site',
+    title: 'Ujjval | Portfolio',
+    description: 'Personalised Blog Website created by Developer Ujjval Priyadarshi',
+    card: 'summary_large_image',
+  }
 }
 
 export default function RootLayout({
