@@ -6,26 +6,35 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Blog | Ujjval',
-  description: 'Personalised Blog Website',
+  description:
+    'Personalised Blog Website, where you can find personalised programming related blogs and tips to enchance your development skills',
   icons: '/logo/white.png',
   openGraph: {
     type: 'website',
     siteName: 'Blog',
     title: 'Blog',
-    url: 'https://res.cloudinary.com/doql129vl/image/upload/v1695316482/group_hi47ny.png',
-    description: 'Personalised Blog Website created by Developer Ujjval Priyadarshi',
+    url: 'https://blogs.snapbit.in',
+    description:
+      'Personalised Blog Website created by Developer Ujjval Priyadarshi',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/doql129vl/image/upload/v1695316482/group_hi47ny.png',
+      },
+    ],
   },
   alternates: {
-    canonical: 'https://blogs.snapbit.in'
+    canonical: 'https://blogs.snapbit.in',
   },
   twitter: {
     creator: '@UjjvalP06',
-    images: 'https://res.cloudinary.com/doql129vl/image/upload/v1695316482/group_hi47ny.png',
+    images:
+      'https://res.cloudinary.com/doql129vl/image/upload/v1695316482/group_hi47ny.png',
     site: '@site',
     title: 'Ujjval | Portfolio',
-    description: 'Personalised Blog Website created by Developer Ujjval Priyadarshi',
+    description:
+      'Personalised Blog Website created by Developer Ujjval Priyadarshi',
     card: 'summary_large_image',
-  }
+  },
 }
 
 export default function RootLayout({

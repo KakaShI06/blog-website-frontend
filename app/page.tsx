@@ -9,7 +9,7 @@ export default function Home() {
     <Layout>
       <WelcomeScreen />
       <LatestPost blog={blogs[blogs.length - 1]} />
-      <h2 className='text-2xl font-bold p-4 pl-0 underline'>Checkout My Other Blogs :</h2>
+      <h2 className='text-2xl font-bold p-4 pl-0 underline'>Checkout My Other Blogs: </h2>
       <FilteredBlogList blogs={blogs} />
     </Layout>
   )
