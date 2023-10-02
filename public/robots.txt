@@ -1,0 +1,11 @@
+User-agent: *
+Disallow:
+
+# Allow Google to crawl all pages
+User-agent: Googlebot
+Disallow:
+
+# Additional rules for specific user-agents can be added here
+
+# Sitemap location
+Sitemap: https://blogs.snapbit.in/sitemap.xml

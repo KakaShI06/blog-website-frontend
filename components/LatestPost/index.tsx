@@ -27,7 +27,7 @@ function LatestPost({ blog }: Props) {
         )}
         <div>
           <h2 className='font-bold text-xl hover:underline hover:cursor-pointer'>
-            <Link href={blog.url}>{blog.name}</Link>
+            <Link href={blog.url} title={blog.name}>{blog.name}</Link>
           </h2>
           <div className='flex gap-2 pt-1 pb-1 flex-wrap'>
             {blog.topic.map((topic, index) => (
