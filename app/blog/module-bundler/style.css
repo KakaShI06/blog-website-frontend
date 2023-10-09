@@ -1,0 +1,21 @@
+p{
+  margin: 1em 0;
+}
+
+ol {
+  list-style: disc;
+}
+
+li {
+  margin-left: 2em;
+}
+
+h3{
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+pre{
+  overflow-y: auto;
+}

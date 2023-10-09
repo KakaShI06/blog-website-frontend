@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import RenderMarkDown from '@/components/RenderedMarkdown'
 import Layout from '@/components/Layout'
+import './style.css'
 
 export default function ModuleBundler() {
   const markdownFilePath = path.join(
