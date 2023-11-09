@@ -4,8 +4,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Blog | Ujjval',
-  description: 'Detailed explaination of webpack.',
+  title: 'Explaining Webpack in Simple Terms',
+  description: "Explaining Module Bundler in very simple language. Since the all the automated packages out there in market you really don't even need to understand in the early stage of your career, but if you really want to understand how the things work under the hood Module Bundler is really important. If you want to create own package or anythings, the concept of bundling is really important.",
   icons: '/logo/white.png',
   openGraph: {
     type: 'website',
