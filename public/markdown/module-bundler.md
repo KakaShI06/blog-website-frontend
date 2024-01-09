@@ -22,7 +22,8 @@ Some other famous bunlder are  Rollup, Parcel, and Snowpack.
 
 Now let's explain what module bundler does.
 
-![Alt text](https://res.cloudinary.com/doql129vl/image/upload/v1699534981/webpack_g5g3bf.png"a title")
+![](https://res.cloudinary.com/doql129vl/image/upload/v1699534981/webpack_g5g3bf.png)
+
 
 You see the image above? That's what bundler do. They bundle exery assets from your projects, whether it's js, html, css bundle them and make us a minified build of our project and we use that build folder, then deploy it to somewhere to use.
 
