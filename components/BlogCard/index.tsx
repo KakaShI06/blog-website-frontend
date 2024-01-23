@@ -1,5 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 type Props = {
   name: string
@@ -10,10 +13,11 @@ type Props = {
 }
 
 function BlogCard({ name, description, link, imageUrl, topics }: Props) {
+  const router = useRouter()
   return (
     <div className='flex flex-col md:flex-row lg:flex-row gap-4 mt-4 border border-[#2b3a42] p-4 rounded-xl'>
       {imageUrl && (
-        <div className='lg:min-w-[300px] md:min-w-[300px]'>
+        <div className='lg:min-w-[300px] md:min-w-[300px] cursor-pointer' onClick={() => router.push(link)}>
           <Image
             alt={'blog-pic'}
             height={300}
