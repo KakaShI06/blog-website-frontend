@@ -4,8 +4,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Blog | Ujjval',
-  description: 'How to center a div',
+  title: 'How to center a div',
+  description: "Learn the essential methods for centering divs in your web projects. This guide provides straightforward techniques and best practices to ensure your content is perfectly aligned. Whether you're new to web development or looking to refine your skills, this tutorial will help you achieve clean and professional layouts with ease.",
   icons: '/logo/white.png',
   openGraph: {
     type: 'website',
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     creator: '@UjjvalP06',
     images: 'https://blogs.snapbit.in/blogs/center-div-css.webp',
     site: '@site',
-    title: 'Ujjval | Blogs',
-    description: 'How to center a div',
+    title: 'How to center a div',
+    description: "Learn the essential methods for centering divs in your web projects. This guide provides straightforward techniques and best practices to ensure your content is perfectly aligned. Whether you're new to web development or looking to refine your skills, this tutorial will help you achieve clean and professional layouts with ease.",
     card: 'summary_large_image',
   },
 }
