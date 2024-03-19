@@ -1,6 +1,4 @@
+# robots.txt for http://blogs.snapbit.in/
 User-agent: *
-Disallow:
-
-# Allow Google to crawl all pages
-User-agent: Googlebot
-Disallow:
+Disallow: /_next/
+Disallow: /*.md
