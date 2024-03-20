@@ -26,6 +26,7 @@ function FilteredBlogList({ blogs }: Props) {
           value={value}
           onChange={(e) => setValue(e.target.value)}
           placeholder='Search for blog'
+          id='filtered-blog-post'
         />
       </div>
 
